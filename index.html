@@ -42,37 +42,39 @@
         </div>
     <!-- Hero -->
     <div class="hero">
-        <div>
+        <img id="hero-image" src="Resources/images/hero-image.png" alt="Hero image">
+        <div class="hero-wrapper">
             <h1>Get Instant E-mail Notifications When Amazon Prices Drop.</h1>
             <input class="search" type="text" name="product-url" id="product-url" placeholder="Enter product URL (https://www.amazon.com/Fujifilm-Instax-SP-3-Mobi...)">
             <button id="search" class="narrow">Search</button>
             <p class="subtext">* You can also search via Keyword (i.e. Apple Airpods Pro)</p>
         </div>
-            <img id="hero-image" src="Resources/images/hero-image.png" alt="Hero image">
     </div>
         <!-- Products -->
         <div class="products">
-            <div class="product-headers">
-                <div class="best-prices">
-                    <div class="select2">
-                        <select>
-                            <option>Best prices</option>
-                            <option>Recently added</option>
-                            <option>Popular</option>
-                        </select>
-                        <div class="select_arrow">
+            <div class="product-wrapper">
+                <div class="product-headers">
+                    <div class="best-prices">
+                        <div class="select2">
+                            <select>
+                                <option>Best prices</option>
+                                <option>Recently added</option>
+                                <option>Popular</option>
+                            </select>
+                            <div class="select_arrow">
+                            </div>
                         </div>
                     </div>
+                    <nav class="sub-nav">
+                        <ul>
+                            <li><a href="#" style="font-weight: bold; border-bottom: orange 4px solid;">Amazon US</a></li>
+                            <li><a href="#">Amazon UK</a></li>
+                            <li><a href="#">Amazon Canada</a></li>
+                            <li><a href="#">Amazon India</a></li>
+                        </ul>
+                    </nav>
+                    <div><img class="filter-icon" src="Resources/images/filter.png" alt=""></div>
                 </div>
-                <nav class="sub-nav">
-                    <ul>
-                        <li><a href="#" style="font-weight: bold; border-bottom: orange 4px solid;">Amazon US</a></li>
-                        <li><a href="#">Amazon UK</a></li>
-                        <li><a href="#">Amazon Canada</a></li>
-                        <li><a href="#">Amazon India</a></li>
-                    </ul>
-                </nav>
-                <div><img class="filter-icon" src="Resources/images/filter.png" alt=""></div>
             </div>
             <div class="product-carousel">
                 <div class="product-container">
@@ -175,12 +177,23 @@
     <div class="subscribe-container">
         <div class="subscribe">
             <h1 class="newsletter-heading white">Want to get notified when any product receives a price drop?</h1>
-            <input type="email" name="email" id="email" class="" placeholder="Enter e-mail address">
+            <input type="email" name="email" id="email" placeholder="Enter e-mail address">
             <button type="button" id="email-button" class="wide">Sign Up</button>
+            <p class="subtext-bottom">* No spam, ever. Only receive price drop notifications.</p>
         <img id="newsletter-img" src="Resources/images/Newsletter-image.png" alt="Newsletter Image">
         </div>
     </div>
     <!-- footer -->
-       <footer></footer>
+       <footer>
+           <div class="footer-wrapper">
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+           </div>
+       </footer>
 </body>
 </html>
