@@ -25,6 +25,7 @@ h2 {
     margin-top: auto;
     margin-bottom: auto;
     font-size: 17px;
+    top: -5px;
 }
 /* #endregion */
 /* #region Buttons*/
@@ -184,6 +185,12 @@ nav.top-menu li {
 .products {
 
 }
+.product-container {
+    max-width: 1250px;
+    display: flex;
+    left: 25px;
+    position: relative;
+}
 .product-headers {
     height: 70px;
     width: 100%;
@@ -271,6 +278,9 @@ nav.sub-nav li:focus{
 .filter-icon {
     right: 70px;
     position: absolute;
+    border: 1px #BFBFBF solid;
+    border-radius: 3px;
+    height: 60%;
 }
 .product-carousel {
     display: flex;
@@ -282,7 +292,7 @@ nav.sub-nav li:focus{
     border: 1px #BFBFBF solid;
     margin: 20px;
     border-radius: 5px;
-    width: 225px;
+    width: 216px;
     position: relative;
     height: 316px;
 }
@@ -296,18 +306,18 @@ nav.sub-nav li:focus{
     padding-right: 5px;
     height: 25px;
     top: 5px;
-    left: 139px;
+    left: 129px;
     font-size: 14px;
     position: absolute;
     display: grid;
     align-content: center;
 }
 .prod-name {
-    font-size: 14px;
+    font-size: 13px;
     margin: 15px;
 }
 .prod-pic{
-    width: 225px;
+    width: 216px;
 }
 .prices {
     margin: 15px;
@@ -318,7 +328,7 @@ nav.sub-nav li:focus{
 .price-head {
     font-size: 10px;
 }
-.buy-now {
+.wide {
     height: 41px;
     width: 140px;
     text-align: center;
@@ -333,10 +343,66 @@ nav.sub-nav li:focus{
     float: right;
 }
 .high-price-value {
-    
+    color: #BFBFBF;
 }
+div.product:nth-child(1) {
+    margin: ;
+    margin-left: 0;
+}
+div.product:nth-child(5) {
+    margin-right: 0;
+    }
 /* #endregion */
 /* #region Subscribe*/
+.subscribe-container {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.subscribe {
+    background-color: #0d65f8;
+    max-width: 1250px;
+    height: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+#newsletter-img {
+    height: 100%;
+    float: right;
+    position: relative;
+}
+.newsletter-heading {
+    font-size: 36px;
+    position: absolute;
+    max-width: 500px;
+    left: 30px;
+    top: 10px;
+}
+.white {
+    color: white;
+}
+#email {
+    position: absolute;
+    top: 138px;
+    left: 30px;
+    height: 37px;
+    width: 300px;
+    border-radius: 3px;
+    border: #0d65f8;
+}
+#email::placeholder {
+    text-align: center;
+}
+#email-button {
+    position: absolute;
+    left: 310px;
+    top: 120px;
+}
 /* #endregion */
 /* #region Footer*/
+footer {
+    width: 100%;
+    height: 200px;
+}
 /* #endregion */
