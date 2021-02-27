@@ -30,7 +30,7 @@ h2 {
 /* #region Buttons*/
 button {
     border: 1px #976900 solid;
-    background-color: #F6DA9F;
+    background-image: linear-gradient(#F6DA9F, #EFC25D);
     border-radius: 3px;
     font-family: 'Signika', sans-serif;
 }
@@ -181,6 +181,160 @@ nav.top-menu li {
 }
 /* #endregion */
 /* #region Item cards*/
+.products {
+
+}
+.product-headers {
+    height: 70px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+}
+.best-prices {
+    
+}
+.select2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 156px;
+    left: 120px;
+    margin-right: 21px;
+    top: 13px;
+}    .select2 select {
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        padding: 10px 15px;
+        border: 1px solid #BFBFBF;
+        background: #ffffff;
+        color: #000000;
+        -moz-appearance: none;
+        border-radius: 3px;
+        height: 45px;
+        font-size: 12px;
+    }
+        .select2 select::-ms-expand {
+            display: none;
+        }
+        .select2 select:hover,
+        .select2 select:focus {
+            color: #000000;
+            background: #cccccc;
+        }
+        .select2 select:disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+.select_arrow {
+    position: absolute;
+    right: 15px;
+    top: 16px;
+    border: solid #000;
+    height: 0px;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+    border-color: #000000;
+}
+.select select:disabled ~ .select_arrow {
+    border-top-color: #cccccc;
+}
+nav.sub-nav {
+    text-align: center;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+nav.sub-nav li {
+    display: inline;
+    margin: 10px;
+    color: #515050;
+    font-size: 13px;
+}
+a {
+    text-decoration: none;
+    color: #515050;
+}
+nav.sub-nav li:focus{
+    border: green 1px solid;
+    
+}
+.filter-icon {
+    right: 70px;
+    position: absolute;
+}
+.product-carousel {
+    display: flex;
+    width: 100%;
+    overflow: auto;
+    justify-content: center;
+}
+.product {
+    border: 1px #BFBFBF solid;
+    margin: 20px;
+    border-radius: 5px;
+    width: 225px;
+    position: relative;
+    height: 316px;
+}
+.best-price {
+    color: white;
+    background: #2abfb5;
+    width: 70px;
+    border-radius: 45px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 25px;
+    top: 5px;
+    left: 139px;
+    font-size: 14px;
+    position: absolute;
+    display: grid;
+    align-content: center;
+}
+.prod-name {
+    font-size: 14px;
+    margin: 15px;
+}
+.prod-pic{
+    width: 225px;
+}
+.prices {
+    margin: 15px;
+}
+.current-price {
+    float: left;
+}
+.price-head {
+    font-size: 10px;
+}
+.buy-now {
+    height: 41px;
+    width: 140px;
+    text-align: center;
+    font-size: 13px;
+    margin-left: 43px;
+    margin-top: 17px;
+}
+.current-price-value {
+    color: #2abfb5;
+}
+.high-price {
+    float: right;
+}
+.high-price-value {
+    
+}
 /* #endregion */
 /* #region Subscribe*/
 /* #endregion */
