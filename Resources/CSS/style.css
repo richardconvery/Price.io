@@ -58,11 +58,9 @@ button.narrow {
         -moz-appearance: none;
         border-radius: 3px;
         height: 45px;
-        font-size: 12px;
+        font-size: 10px;
+        padding-left: 4px;
     }
-        .select select::-ms-expand {
-            display: none;
-        }
         .select select:hover,
         .select select:focus {
             color: #000000;
@@ -109,9 +107,9 @@ button.narrow {
         transition: ease-in margin-right 0.5s;
     }
     .hero {
-       margin-left: 20px !important;
-       margin-right: 20px !important;
-       transition: ease-in margin-left 0.5s;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        transition: ease-in margin-left 0.5s;
         transition: ease-in margin-right 0.5s;
     }
     .product-wrapper {
@@ -147,7 +145,7 @@ button.narrow {
     border: 1px #BFBFBF solid;
     background-color: white;
     z-index: 1;
-    position: relative;
+    position: fixed;
 }
 .top-banner-wrapper {
     max-width: 1250px;
@@ -308,13 +306,27 @@ nav.top-menu li {
 	#menu input:checked + label {color:white}
 	#menu input:checked + label:before {content:"\00d7"}
 	#menu input:checked ~ ul {display:block}
+    .logo-box {
+        height: 22.5px;
+        grid-template-columns: 32px auto;
+        transition: ease-in grid-template-columns 0.5s;
+        transition: ease-in height 0.5s;
+    }
+    .top-banner-wrapper {
+        grid-template-columns: 90px 1fr 270px;
+    }
+    h2 {
+        font-size: 15px;
+        transition: ease-in font-size 0.5s;
+    }
 }
 /* #endregion */
 /* #region Hero*/
 .hero {
     width: 100%;
     position: relative;
-    height: 370px;
+    height: 450px;
+    top: 60px;
 }
 .hero-wrapper {
     margin-left: auto;
@@ -334,7 +346,7 @@ nav.top-menu li {
     position: absolute;
     top: 270px;
     height: 41px;
-    width: 67%;
+    width: 65%;
     max-width: 455px;
     min-width: 260px;
     border-radius: 3px;
@@ -368,7 +380,7 @@ nav.top-menu li {
         float: right;
         position: relative;
         top: -161px;
-        left: -20px;
+        left: -30px;
     }
     }
 /* #endregion */
@@ -382,6 +394,9 @@ nav.top-menu li {
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    height: 90px;
+    top: 20px;
+    z-index: 0;
 }
 .product-container {
     max-width: 1250px;
@@ -394,10 +409,10 @@ nav.top-menu li {
     height: 70px;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 160px 1fr 40px;
     background-color: white;
     z-index: 1;
-    position: relative;
+    position: absolute;
 }
 .best-prices {
     text-align: left;
@@ -424,9 +439,6 @@ nav.top-menu li {
         height: 45px;
         font-size: 12px;
     }
-        .select2 select::-ms-expand {
-            display: none;
-        }
         .select2 select:hover,
         .select2 select:focus {
             color: #000000;
@@ -460,6 +472,7 @@ nav.sub-nav {
     position: relative;
     margin-top: auto;
     margin-bottom: auto;
+    margin-right: 15%;
 }
 nav.sub-nav li {
     display: inline;
@@ -478,7 +491,7 @@ nav.sub-nav li:focus{
 .filter-icon {
     border: 1px #BFBFBF solid;
     border-radius: 3px;
-    height: 60%;
+    height: 45px;
     position: relative;
     text-align: right;
     float: right;
@@ -551,6 +564,15 @@ div.product:nth-child(1) {
 div.product:nth-child(5) {
     margin-right: 0;
     }
+@media (max-width: 537px) {
+    .filter-icon {
+        height: 38px;
+        transition: ease-in height 0.5s;
+    }
+    nav.sub-nav {
+        display: none;
+    }
+}
 /* #endregion */
 /* #region Subscribe*/
 .subscribe-container {
@@ -617,6 +639,29 @@ h1.newsletter-heading {
         transition: opacity .5s ease-in-out;
     }
 }
+@media (max-width: 550px){
+    #newsletter-img {
+        opacity: 0.4;
+        transition: opacity .5s ease-in-out;
+    }
+    #email {
+        width: 85%;
+        }
+    #email-button {
+        left: -10px;
+        top: 170px;
+        width: 85%;
+    }
+    .subscribe {
+        height: 280px;
+    }
+    .subtext-bottom {
+        top: 220px;
+    }
+    #newsletter-img {
+        opacity: 0;
+    }
+}
 /* #endregion */
 /* #region Footer*/
 footer {
@@ -664,5 +709,14 @@ footer li {
     list-style-type:none;
     font-size: 14px;
     padding-top: 3px;
+}
+@media (max-width: 650px) {
+    .footer-wrapper {
+        display: unset;
+        text-align: center;
+        }
+    .footer7 {
+        text-align: center;   
+}
 }
 /* #endregion */
