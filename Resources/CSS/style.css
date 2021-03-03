@@ -592,6 +592,9 @@ div.product:nth-child(5) {
     nav.sub-nav {
         display: none;
     }
+    .products {
+        top: 0px;
+    }
 }
 /* #endregion */
 /* #region Subscribe*/
