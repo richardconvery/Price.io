@@ -9,7 +9,6 @@ h1 {
     color: #0d65f8;
     font-size: 48px;
     max-width: 580px;
-    font-weight: bold;
     position: absolute;
     z-index: 0;
     top: 35px;
@@ -91,14 +90,17 @@ button.narrow {
 }
 @media (max-width: 1300px){
     h1 {
-        padding-left: 20px;
+        padding-left: 0px;
         font-size: 45px;
         transition: ease-in font-size 0.5s;
+        padding-right: 20px;
+    font-size: 42px;
     }
     h1.newsletter-heading {
         font-size: 28px;
-        left: 10px;
+        left: 30px;
         transition: ease-in font-size 0.5s;
+        padding-right: 10px;
     }
     .top-banner-wrapper {
         margin-left: 20px !important;
@@ -131,10 +133,16 @@ button.narrow {
         transition: ease-in margin-right 0.5s;
     }
     footer {
-        margin-left: 20px !important;
+        margin-left: 0px;
         margin-right: 20px !important;
         transition: ease-in margin-left 0.5s;
         transition: ease-in margin-right 0.5s;
+    }
+    .select {
+        display: none;
+    }
+    .sign-up {
+        margin-right: 90px;
     }
 }
 /* #endregion */
@@ -379,8 +387,20 @@ nav.top-menu li {
     #search {
         float: right;
         position: relative;
-        top: -161px;
+        top: -130px;
         left: -30px;
+    }
+    .search {
+        top: 300px;
+        min-width: 200px;
+        width: 200px;
+    }
+    .subtext {
+        top: 340px;
+        padding-right: 20px;
+    }
+    .products {
+        top: -10px;
     }
     }
 /* #endregion */
