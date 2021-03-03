@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Resources/CSS/style.css">
+    <link rel="icon" type="image/png" href="Resources/images/logo-notext.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <title>Price.io - Amazon Price Tracker</title>
+</head>
+<body style="background-color:#F8F8F8">
+    <!-- Top Banner -->
+        <div class="top-banner">
+            <div class="top-banner-wrapper">
+                <div class="logo-container">
+                    <div class="logo-box">
+                        <img id="logo" src="Resources/images/logo-notext.png" alt="Price.io icon">
+                            <h2>Price.io</h2>
+                    </div>
+                </div>
+                <nav id='menu'>
+                    <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+                    <ul>
+                      <li><a href='http://'>Home</a></li>
+                      <li><a href='http://'>Trending Price Drops</a></li>
+                      <li><a href='http://'>Popular Products</a></li>
+                    </ul> <img src="" alt="">
+                  </nav>
+                <div class="sign-up">
+                    <div class="select">
+                        <select>
+                            <option>🇺🇸Amazon U.S</option>
+                            <option>🇬🇧Amazon UK</option>
+                            <option>🇨🇦Amazon Canada</option>
+                            <option>🇮🇳Amazon India</option>
+                        </select>
+                        <div class="select_arrow">
+                        </div>
+                    </div>
+                    <button class="narrow">Sign up</button>
+                </div>
+            </div>
+        </div>
+    <!-- Product detail -->
+        <div class="product-detail-section">
+            <div class="product-detail-container">
+                <div class="flex1"><img id="prod1" src="Resources/images/product-1.png" alt="laptop"></div>
+                <div class="flex2">test</div>
+                <div class="flex3">test</div>
+                <div class="flex4">test</div>
+                <div class="flex5">test</div>
+                <div class="flex6">test</div>
+
+            </div>
+        </div>
+        <!-- Products -->
+        <div class="products">
+            <div class="product-wrapper">
+                <h4 class="black">People Also Viewed</h4>
+            </div>
+            <div class="product-carousel">
+                <div class="product-container">
+                    <div class="product">
+                        <img class="prod-pic" src="Resources/images/product-1.png" alt="MacBook">
+                        <div class="best-price"><p>Best Price</p></div>
+                        <div class="prod-name">
+                            <h3>Apple MacBook Pro 13' 2.4 Ghz - 8 GB RAM</h3>
+                        </div>
+                            <div class="prices">
+                                <div class="current-price">
+                                    <div class="price-head">Current price</div>
+                                    <div class="current-price-value">$859.99</div>
+                                </div>
+                                <div class="high-price">
+                                    <div class="price-head">Highest price</div>
+                                    <div class="high-price-value">$859.99</div>
+                                </div>
+                            </div>
+                            <br>
+                        <button class="wide">Buy Now</button>
+                        </div>
+                        <div class="product">
+                        <img class="prod-pic" src="Resources/images/product-2.png" alt="Piano">
+                        <div class="best-price"><p>Best Price</p></div>
+                        <div class="prod-name">
+                            <h3>Roland F-20 88 Weighted Digital Piano</h3>
+                        </div>
+                            <div class="prices">
+                                <div class="current-price">
+                                    <div class="price-head">Current price</div>
+                                    <div class="current-price-value">$430.99</div>
+                                </div>
+                                <div class="high-price">
+                                    <div class="price-head">Highest price</div>
+                                    <div class="high-price-value">$489.99</div>
+                                </div>
+                            </div>
+                        <button class="wide">Buy Now</button>
+                        </div>
+                        <div class="product">
+                        <img class="prod-pic" src="Resources/images/product-3.png" alt="Laptop">
+                        <div class="best-price"><p>Best Price</p></div>
+                        <div class="prod-name">
+                            <h3>Alienware m17 R3 17.7 Inch Gaming Laptop</h3>
+                        </div>
+                            <div class="prices">
+                                <div class="current-price">
+                                    <div class="price-head">Current price</div>
+                                    <div class="current-price-value">$2499.99</div>
+                                </div>
+                                <div class="high-price">
+                                    <div class="price-head">Highest price</div>
+                                    <div class="high-price-value">$2699.99</div>
+                                </div>
+                            </div>
+                        <button class="wide">Buy Now</button>
+                        </div>
+                        <div class="product">
+                        <img class="prod-pic" src="Resources/images/product-4.png" alt="Speaker">
+                        <div class="best-price"><p>Best Price</p></div>
+                        <div class="prod-name">
+                            <h3>JBL Boombox - Waterproof Portable Speaker</h3>
+                        </div>
+                            <div class="prices">
+                                <div class="current-price">
+                                    <div class="price-head">Current price</div>
+                                    <div class="current-price-value">$499.95</div>
+                                </div>
+                                <div class="high-price">
+                                    <div class="price-head">Highest price</div>
+                                    <div class="high-price-value">$505.99</div>
+                                </div>
+                            </div>
+                        <button class="wide">Buy Now</button>
+                        </div>
+                        <div class="product">
+                        <img class="prod-pic" src="Resources/images/product-5.png" alt="Sub">
+                        <div class="best-price"><p>Best Price</p></div>
+                        <div class="prod-name">
+                            <h3>ELAC Debut 2.0 SUB3010 400 Watt - Black</h3>
+                        </div>
+                            <div class="prices">
+                                <div class="current-price">
+                                    <div class="price-head">Current price</div>
+                                    <div class="current-price-value">$459.98</div>
+                                </div>
+                                <div class="high-price">
+                                    <div class="price-head">Highest price</div>
+                                    <div class="high-price-value">$579.98</div>
+                                </div>
+                            </div>
+                        <button class="wide">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- footer -->
+       <footer>
+           <div class="footer-wrapper">
+                <div class="footer1"><img id="logobottom" src="Resources/images/logo-notext.png" alt="Price.io icon">
+                    <p class="copywrite">&#xA9 2020</p></div>
+                <div class="footer2">
+                   <p style="font-weight: bold; font-size: 14px">Price.io</p>
+                   <ul>
+                       <li>Home</li>
+                       <li>Trending Price Drops</li>
+                       <li>Popular Products</li>
+                   </ul>
+                </div>
+               <div class="footer3">
+                   <p style="font-weight: bold; font-size: 14px">Amazon Store Selector</p>
+                    <ul>
+                        <li>Amazon US</li>
+                        <li>Amazon UK</li>
+                        <li>Amazon Canada</li>
+                        <li>Amazon India</li>
+                    </ul>
+                </div>
+                <div class="footer4">
+                    <p style="font-weight: bold; font-size: 14px">Hotlinks</p>
+                     <ul>
+                         <li>Sign Up</li>
+                         <li>Sign In</li>
+                         <li>Support</li>
+                     </ul>
+                 </div>
+                 <div class="footer5">
+                    <p style="font-weight: bold; font-size: 14px">Personal</p>
+                     <ul>
+                         <li>Dashboard</li>
+                     </ul>
+                 </div>
+               <div class="footer6">
+                <p style="font-weight: bold; font-size: 14px;">Follow Us On</p>
+                <img class="socials" src="Resources/images/White_2_.png" alt="Facebook">
+                <img class="socials" src="Resources/images/social-1_logo-twitter.png" alt="Twitter">
+                <img class="socials" src="Resources/images/social-1_logo-instagram.png" alt="Instagram">
+               </div>
+               <div class="footer7">Made with love ♥️ by a Good Code Challenger</div>
+           </div>
+       </footer>
+</body>
+</html>

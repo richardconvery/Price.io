@@ -21,6 +21,9 @@ h2 {
     margin-bottom: auto;
     font-size: 17px;
 }
+h4 {
+    font-size: 33px;
+}
 /* #endregion */
 /* #region Buttons*/
 button {
@@ -406,8 +409,8 @@ nav.top-menu li {
 /* #endregion */
 /* #region Item cards*/
 .products {
-    position: relative;
-    top: -20px;
+    position: static;
+    display: flow-root;
 }
 .product-wrapper {
     max-width: 1250px;
@@ -627,6 +630,9 @@ div.product:nth-child(5) {
 .white {
     color: white;
 }
+.black {
+    color: black;
+}
 #email {
     position: absolute;
     top: 138px;
@@ -741,5 +747,75 @@ footer li {
     .footer7 {
         text-align: center;   
 }
+}
+/* #endregion */
+/* #region Footer*/
+.product-detail-section {
+    width: 100%;
+    position: relative;
+    top: 100px;
+    display: block;
+    height: 100%;
+}
+.product-detail-container {
+    width: 100%;
+    margin-bottom: 40px;
+    border: 1px #cfcece solid;
+    border-radius: 3px;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    justify-content: space-around;
+}
+#prod1 {
+    border-radius: 3px;
+    margin: 30px;
+}
+.flex1 {
+    border: 1px #cfcece solid;
+    border-radius: 3px;
+    width: 400px;
+    height: 200px;
+    width: 400px;
+}
+.flex2 {
+    border: 1px #cfcece solid;
+    border-radius: 3px;
+    width: 400px;
+    height: 200px;
+}
+.flex3 {
+    border: 1px #cfcece solid;
+    border-radius: 3px;
+    width: 400px;
+    height: 200px;
+    
+}
+.flex4 {
+    border: 1px #cfcece solid;
+    border-radius: 3px;
+    width: 400px;
+    height: 200px;
+    
+}
+.flex5 {
+    border: 1px #cfcece solid;
+    border-radius: 3px;
+    width: 400px;
+    height: 200px;
+    
+}
+.flex6 {
+    border: 1px #cfcece solid;
+    border-radius: 3px;
+    width: 400px;
+    height: 200px;
+    
 }
 /* #endregion */
