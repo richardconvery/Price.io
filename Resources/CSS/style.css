@@ -23,7 +23,15 @@ h2 {
 }
 h4 {
     font-size: 33px;
+    font-weight: normal;
 }
+h5 {
+    font-size: 29px;
+    font-weight: normal;
+    padding: 30px;
+    position: relative;
+    top: -40px;
+    }
 /* #endregion */
 /* #region Buttons*/
 button {
@@ -758,8 +766,7 @@ footer li {
     height: 100%;
 }
 .product-detail-container {
-    width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     border: 1px #cfcece solid;
     border-radius: 3px;
     max-width: 1250px;
@@ -776,46 +783,176 @@ footer li {
 #prod1 {
     border-radius: 3px;
     margin: 30px;
+    height: 190px;
 }
 .flex1 {
-    border: 1px #cfcece solid;
+    /* border: 1px #cfcece solid; */
     border-radius: 3px;
+    height: 240px;
     width: 400px;
-    height: 200px;
-    width: 400px;
+    text-align: center;
 }
 .flex2 {
-    border: 1px #cfcece solid;
+    /* border: 1px #cfcece solid; */
     border-radius: 3px;
     width: 400px;
-    height: 200px;
+    height: 240px;
 }
 .flex3 {
-    border: 1px #cfcece solid;
+    /* border: 1px #cfcece solid; */
     border-radius: 3px;
     width: 400px;
-    height: 200px;
+    height: 240px;
+    margin-right: 30px;
+    margin-left: 20px;
     
 }
 .flex4 {
-    border: 1px #cfcece solid;
+    /* border: 1px #cfcece solid; */
     border-radius: 3px;
     width: 400px;
-    height: 200px;
+    height: 170px;
     
 }
 .flex5 {
-    border: 1px #cfcece solid;
+    /* border: 1px #cfcece solid; */
     border-radius: 3px;
     width: 400px;
-    height: 200px;
+    height: 170px;
     
 }
 .flex6 {
-    border: 1px #cfcece solid;
+    /* border: 1px #cfcece solid; */
     border-radius: 3px;
     width: 400px;
-    height: 200px;
+    height: 170px;
     
+}
+.prod-title {
+    display: block;
+    top: -12px;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.breadcrumb {
+    position: relative;
+    top: -50px;
+    padding-left: 35px;
+    padding-right: 35px;
+    color: #0058ff;
+    font-size: 15px;
+}
+.price-and-button {
+    position: relative;
+    top: -50px;
+    padding-left: 10px;
+    padding-right: 120px;
+}
+.current-price-text {
+    width: 50%;
+    color: grey;
+    text-align: end;
+    font-size: 14px;
+}
+.current-price-amount {
+    width: 50%;
+    position: relative;
+    top: -31px;
+    font-size: 30px;
+    text-align: end;
+    color: #2abfb5;
+}
+.breadcrumb {
+    font-size: 14px;
+    }
+#view-on-amazon {
+    position: relative;
+    top: -112px;
+    left: 200px;
+    width: 160px;
+}
+#graph {
+    width: 400px;
+}
+#email2 {
+    border-radius: 3px;
+    border: 1px solid #bfbfbfd3;
+    position: relative;
+    width: 300px;
+    padding-left: 20px;
+    height: 45px;
+    top: -97px;
+    left: 32px;
+    box-shadow: 0px 0px 2px 0px #888;
+}
+#email2::placeholder {
+    font-size: 12px;
+}
+.checkboxes {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    position: relative;
+    top: 102px;
+    font-size: 16px;
+    }
+#price-drop-to {
+    border-radius: 3px;
+    border: 1px solid #bfbfbfd3;
+    position: relative;
+    padding-left: 20px;
+    height: 37px;
+    width: 300px;
+    height: 45px;
+    width: 220px;
+    top: 97px;
+    left: -20px;
+    box-shadow: 0px 0px 2px 0px #888;
+    }
+#price-drop-to::placeholder {
+    font-size: 12px;
+}
+#track-product {
+    position: relative;
+    top: 97px;
+    left: -5px;
+    width: 160px;
+    }
+@media (max-width: 1290px){
+    .product-detail-container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .checkboxes {
+        top: 0px;
+        }
+    #price-drop-to {
+        top: 0px;
+        }
+    #track-product {
+        top: 0px;
+        }
+    .flex6 {
+        height: 70px;
+        }
+    .flex5 {
+        height: 70px;
+        }
+    h5 {
+        top: -100px;
+        }
+    #email2 {
+        top: -160px;
+        }
+    .flex4 {
+        height: 100px;
+        }
+    #price-drop-to {
+        left: 10px;
+        }
+    #track-product {
+        left: 15px;
+        }
 }
 /* #endregion */
