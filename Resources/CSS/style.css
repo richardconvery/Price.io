@@ -1,6 +1,3 @@
-div {
-    border: gray 1px solid;
-}
 /* #region Global styles*/
 html, body {
     margin:0;
@@ -343,7 +340,10 @@ nav.top-menu li {
     top: 60px;
 }
 .hero-wrapper {
-    margin-left: 20px;
+    padding-left: 20px;
+    margin: ;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     max-width: 1250px;
     height: 370px;
