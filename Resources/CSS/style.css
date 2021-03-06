@@ -503,6 +503,9 @@ nav.sub-nav {
     margin-bottom: auto;
     margin-right: 15%;
 }
+.sub-nav a:hover {
+    border-bottom: 4px solid #b2cffe;
+    }
 nav.sub-nav li {
     display: inline;
     margin: 10px;
