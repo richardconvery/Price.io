@@ -509,6 +509,9 @@ nav.sub-nav li {
     color: #515050;
     font-size: 13px;
 }
+li {
+    cursor: pointer;
+}
 a {
     text-decoration: none;
     color: #515050;
