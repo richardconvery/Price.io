@@ -243,6 +243,7 @@ nav.top-menu li {
 #menu li a:hover {
 	color: #000000;
 	background: #EFC25D;
+    border-radius: 3px;
 }
 #menu input {
 	display: none;
@@ -386,6 +387,7 @@ nav.top-menu li {
     position: absolute;
     top: 310px;
     color: #aaaaaa;
+    font-size: 12px;
 }
 @media(max-width: 1133px) {
     #hero-image {
@@ -681,6 +683,7 @@ div.product:nth-child(5) {
     left: 30px;
     color: #aaaaaa;
     z-index: 1;
+    font-size: 12px;
 }
 h1.newsletter-heading {
     z-index: 1;
