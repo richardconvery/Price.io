@@ -44,6 +44,7 @@ button {
     background-image: linear-gradient(#F6DA9F, #EFC25D);
     border-radius: 3px;
     font-family: 'Signika', sans-serif;
+    cursor: pointer;
 }
 button.narrow {
     text-align: center;
@@ -359,7 +360,7 @@ nav.top-menu li {
     top: 270px;
     height: 41px;
     width: 65%;
-    max-width: 455px;
+    max-width: 425px;
     min-width: 260px;
     border-radius: 3px;
     border: #e3e2e2 1px solid;
@@ -522,6 +523,12 @@ nav.sub-nav li:focus{
     text-align: right;
     float: right;
     top: 18px;
+    width: auto;
+    margin-right: -1px;
+}
+.filter-icon:hover {
+    filter: invert(20%);
+    cursor: pointer;
 }
 .product-carousel {
     width: 100%;
