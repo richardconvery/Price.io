@@ -145,6 +145,8 @@ button.narrow {
         transition: ease-in margin-left 0.5s;
         transition: ease-in margin-right 0.5s;
     }
+}
+@media (max-width: 800px) {
     .select {
         display: none;
     }
