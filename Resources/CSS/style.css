@@ -3,6 +3,7 @@ html, body {
     margin:0;
     padding:0;
     font-family: 'Signika', sans-serif;
+    overflow-x:hidden;
 }
 h1 {
     font-weight: normal;
@@ -32,6 +33,11 @@ h5 {
     position: relative;
     top: -40px;
     }
+@media (max-width: 345px) {
+    h1 {
+    font-size: 33px;
+}
+}
 /* #endregion */
 /* #region Buttons*/
 button {
@@ -99,14 +105,15 @@ button.narrow {
 .select select:disabled ~ .select_arrow {
     border-top-color: #cccccc;
 }
-@media (max-width: 1300px){
+@media (min-width: 346px) and (max-width: 1300px){
     h1 {
         padding-left: 0px;
-        font-size: 45px;
+        font-size: 37px;
         transition: ease-in font-size 0.5s;
         padding-right: 20px;
-    font-size: 42px;
     }
+}
+@media (max-width: 1300px){
     h1.newsletter-heading {
         font-size: 28px;
         left: 30px;
@@ -126,16 +133,11 @@ button.narrow {
         transition: ease-in margin-right 0.5s;
     }
     .product-wrapper {
-        margin-left: 20px !important;
-        margin-right: 20px !important;
+        padding-left: 20px;
+        padding-right: 20px;
         transition: ease-in margin-left 0.5s;
         transition: ease-in margin-right 0.5s;
-    }
-    .product-carousel {
-        margin-left: 20px !important;
-        margin-right: 20px !important;
-        transition: ease-in margin-left 0.5s;
-        transition: ease-in margin-right 0.5s;
+        top: 0px;
     }
     .subscribe {
         margin-left: 20px !important;
@@ -143,17 +145,14 @@ button.narrow {
         transition: ease-in margin-left 0.5s;
         transition: ease-in margin-right 0.5s;
     }
-    footer {
-        margin-left: 0px;
-        margin-right: 20px !important;
+    .footer-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
         transition: ease-in margin-left 0.5s;
         transition: ease-in margin-right 0.5s;
     }
     .select {
         display: none;
-    }
-    .sign-up {
-        margin-right: 90px;
     }
 }
 /* #endregion */
@@ -161,9 +160,9 @@ button.narrow {
 .top-banner {
     min-height: 70px;
     width: 100%;
-    border: 1px #BFBFBF solid;
+    border-bottom: 1px #BFBFBF solid;
     background-color: white;
-    z-index: 1;
+    z-index: 5;
     position: fixed;
 }
 .top-banner-wrapper {
@@ -332,7 +331,7 @@ nav.top-menu li {
         transition: ease-in height 0.5s;
     }
     .top-banner-wrapper {
-        grid-template-columns: 90px 1fr 270px;
+        grid-template-columns: 90px 1fr 125px;
     }
     h2 {
         font-size: 15px;
@@ -398,26 +397,27 @@ nav.top-menu li {
     #search {
         float: right;
         position: relative;
-        top: -130px;
-        left: -30px;
+        top: -190px;
+        left: -40px;
     }
     .search {
-        top: 300px;
-        min-width: 200px;
-        width: 200px;
+        top: 240px;
+        min-width: 143px;
+        width: 45%;
     }
     .subtext {
-        top: 340px;
+        top: 290px;
         padding-right: 20px;
+        color: #686868;
     }
     .products {
-        top: -10px;
+        width: 100%;
     }
     }
 /* #endregion */
 /* #region Item cards*/
 .products {
-    position: static;
+    top: -40px;
     display: flow-root;
 }
 .product-wrapper {
@@ -439,11 +439,12 @@ nav.top-menu li {
 .product-headers {
     height: 70px;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     grid-template-columns: 160px 1fr 40px;
     background-color: white;
     z-index: 1;
-    position: absolute;
 }
 .best-prices {
     text-align: left;
@@ -597,14 +598,16 @@ div.product:nth-child(5) {
     }
 @media (max-width: 537px) {
     .filter-icon {
-        height: 38px;
-        transition: ease-in height 0.5s;
+        height: 44px;
+        top: 13px;
+        float: none;
     }
     nav.sub-nav {
         display: none;
     }
     .products {
-        top: 0px;
+        top: -50px;
+    position: relative;
     }
 }
 /* #endregion */
@@ -712,7 +715,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    grid-template-columns: 1.5fr 2fr 2fr 1fr 2fr 2fr 4fr;
+    grid-template-columns: 1.5fr 2fr 2fr 1fr 2fr 2fr 3fr;
 }
 #logobottom {
     height: 20%;
