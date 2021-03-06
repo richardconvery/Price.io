@@ -1,9 +1,11 @@
+div {
+    border: gray 1px solid;
+}
 /* #region Global styles*/
 html, body {
     margin:0;
     padding:0;
     font-family: 'Signika', sans-serif;
-    overflow-x:hidden;
 }
 h1 {
     font-weight: normal;
@@ -121,12 +123,6 @@ button.narrow {
         padding-right: 10px;
     }
     .top-banner-wrapper {
-        margin-left: 20px !important;
-        margin-right: 20px !important;
-        transition: ease-in margin-left 0.5s;
-        transition: ease-in margin-right 0.5s;
-    }
-    .hero {
         margin-left: 20px !important;
         margin-right: 20px !important;
         transition: ease-in margin-left 0.5s;
@@ -347,8 +343,7 @@ nav.top-menu li {
     top: 60px;
 }
 .hero-wrapper {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20px;
     position: relative;
     max-width: 1250px;
     height: 370px;
