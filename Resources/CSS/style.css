@@ -825,22 +825,7 @@ footer li {
     margin-left: 20px;
     
 }
-.flex4 {
-    /* border: 1px #cfcece solid; */
-    border-radius: 3px;
-    width: 400px;
-    height: 170px;
-    
-}
-.flex5 {
-    /* border: 1px #cfcece solid; */
-    border-radius: 3px;
-    width: 400px;
-    height: 170px;
-    
-}
-.flex6 {
-    /* border: 1px #cfcece solid; */
+.flex4, .flex5, .flex6 {
     border-radius: 3px;
     width: 400px;
     height: 170px;
@@ -920,8 +905,6 @@ footer li {
     border: 1px solid #bfbfbfd3;
     position: relative;
     padding-left: 20px;
-    height: 37px;
-    width: 300px;
     height: 45px;
     width: 220px;
     top: 97px;
@@ -937,7 +920,69 @@ footer li {
     left: -5px;
     width: 160px;
     }
-@media (max-width: 1290px){
+@media (max-width: 450px){
+    .product-detail-container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .prod-title {
+        text-align: center;
+    }
+    .breadcrumb {
+        text-align: center;
+    }
+    #prod1 {
+        max-height: 160px;
+        height: 180px;
+    }
+    .flex1 {
+        height: 180px;
+    }
+    .flex2 {
+        height: 320px;
+    }
+    #view-on-amazon {
+        left: 110px;
+        width: 120px;
+    }
+    .price-and-button {
+        padding-left: 30px;
+        text-align: center;
+        top: -30px;
+    }
+    #graph {
+        width: 250px;
+    }
+    .flex3 {
+        height: 120px;
+        text-align: center;
+    }
+    .flex4, .flex5, .flex6 {
+        text-align: center;
+    }
+    #email2 {
+        width: 220px;
+        left: 0px;
+    }
+    .checkboxes {
+        top: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #price-drop-to {
+        width: 240px;
+        top: 0px;
+        left: 0px;
+    }
+    #track-product {
+        top: 20px;
+        left: 0px;
+    }
+    .products {
+        top: 0px;
+    }
+}
+@media (min-width: 451px) and (max-width: 1290px){
     .product-detail-container{
         margin-left: 20px;
         margin-right: 20px;
